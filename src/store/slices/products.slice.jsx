@@ -29,8 +29,8 @@ export const filterProductsThunk = (id) => (dispatch) => {
 
 export const filterQueryThunk = (inputSearch) => (dispatch) => {
     dispatch(setIsLoading(true));
-    return axios.get(`https://e-commerce-api.academlo.tech/api/v1/products?query=${inputSearch}`)
-        .then((res) => dispatch(dispatch(setProducts(res.data.data.products))))
+    return axios.get(`https://backend-ecommerce-production-645d.up.railway.app/api/v1/products/filter/${inputSearch}`)
+        .then((res) => dispatch(dispatch(setProducts(res.data))))
         .finally(() => dispatch(setIsLoading(false)));
 }
 

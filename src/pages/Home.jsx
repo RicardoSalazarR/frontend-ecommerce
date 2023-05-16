@@ -78,7 +78,7 @@ const Home = () => {
                         <Button variant="outline-secondary" id="button-addon2"
                             onClick={() => { dispatch(filterQueryThunk(inputSearch)) }}
                         >
-                            Button
+                            Search
                         </Button>
                     </InputGroup>
                 </div>
