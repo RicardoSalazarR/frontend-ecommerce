@@ -75,7 +75,7 @@ const Home = () => {
                             value={inputSearch}
                             onChange={e => setInputSearch(e.target.value)}
                         />
-                        <Button variant="outline-secondary" id="button-addon2"
+                        <Button variant="outline-secondary" id="button-addon2" type='submit'
                             onClick={() => { dispatch(filterQueryThunk(inputSearch)) }}
                         >
                             Search

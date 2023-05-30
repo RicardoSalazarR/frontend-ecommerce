@@ -17,6 +17,7 @@ const Login = () => {
                 navigate("/")
                 console.log(res.data.token)
                 localStorage.setItem("token", res.data.token)
+                localStorage.setItem("userType",res.data.user_type)
             })
             .catch(error => {
                 if (error.response?.status === 404) {
