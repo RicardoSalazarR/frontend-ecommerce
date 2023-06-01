@@ -29,7 +29,7 @@ const NavBar = () => {
                 Purchases
               </Nav.Link>
               <Nav.Link onClick={handleShow}>Cart</Nav.Link>
-              <Nav.Link as={Link} to="/manage/products" className={userType==="cliente"?"hide":''}>
+              <Nav.Link as={Link} to="/manage/products" className={userType==="vendedor"?"":'hide'}>
                 Manage products
               </Nav.Link>
             </Nav>
